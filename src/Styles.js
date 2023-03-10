@@ -87,13 +87,7 @@ body{
 .form-search h2 {
     font-size: 50px;
 }
-/* single movie */
-.single-movie {
 
-}
-.single-movie .single-info {
-
-}
 .single-movie .single-info h2 {
     font-size: 40px;
     line-height: 42px;

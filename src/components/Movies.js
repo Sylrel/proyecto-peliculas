@@ -6,7 +6,7 @@ const Movies = () => {
     const { isLoading, data } = useContext(DataContext);
 
     return (
-        <div className="movies-content">
+        <div className="movies-content">   {/**Si el loading no esta cargando muestrame los dato de la pelicula sino lo muestra vacio */}
             {
                 !isLoading ?
                     data.map(item => (

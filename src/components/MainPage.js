@@ -10,7 +10,6 @@ const MainPage = () => {
                 <FormSearch />
                 <Movies />
             </DataProvider>
-
         </>
     );
 };

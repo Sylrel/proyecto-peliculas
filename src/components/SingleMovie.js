@@ -12,16 +12,14 @@ const SingleMovie = () => {
         return <StyledLoading></StyledLoading>
     }
 
-
-
     const { Poster, Title, Plot, Year, Country, Director, Released, Runtime } = data;
     let image = Poster === "N/A" ? DefaultImage : Poster;
 
     return (
         !isLoading ?
-            <StyledSingleMovie>
-                <img src={image} alt={Title} />
-                <StyledSingleInfo>
+            <StyledSingleMovie> 
+                <img src={image} alt={Title} /> 
+                <StyledSingleInfo>   {/**Creo los parrafos con la informacion de la película y muestra la información del json */}
                     <h2>{Title}</h2>
                     <p>{Plot}</p>
                     <p><strong>País: </strong>{Country}</p>
@@ -34,5 +32,7 @@ const SingleMovie = () => {
             : ''
     );
 };
+
+
 
 export default SingleMovie;

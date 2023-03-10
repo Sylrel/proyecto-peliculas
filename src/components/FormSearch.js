@@ -16,7 +16,7 @@ const FormSearch = () => {
       
     return (
         <div className="form-search">
-            <h2>Buscador Películas</h2>
+            <h2>Buscador Películas</h2>   {/**Creamos el div con el buscador de peliculas que recibe el titulo de la pelicula que queremos buscar */}
             <form onSubmit={ handleSubmit }>
                 <input type="text" name="" placeholder='Título película' onChange={e => setTitle(e.target.value)} />
                 <input type="submit" value="Buscar" />
